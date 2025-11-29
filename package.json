@@ -1,0 +1,27 @@
+{
+  "name": "expense-poc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:setup": "node scripts/setup-db.js"
+    ,"mcp:run": "node scripts/run-mcp.js"
+  },
+  "dependencies": {
+    "next": "14.2.33",
+    "pg": "^8.11.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.5.6",
+    "@types/react": "18.2.28",
+    "autoprefixer": "10.4.14",
+    "postcss": "^8.4.31",
+    "tailwindcss": "3.4.7",
+    "typescript": "^5.5.2"
+  }
+}
