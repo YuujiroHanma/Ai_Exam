@@ -115,18 +115,7 @@ export default function ExpenseForm({ onSubmitted }: { onSubmitted?: (res: any) 
         </div>
       </Card>
 
-      {result && (
-        <div className="mt-4">
-          {result.ok ? (
-            <Alert variant="success" title="Submitted" message="Expense submitted successfully." details={result.body ?? result} />
-          ) : (
-            (() => {
-              const friendly = extractFriendlyMessage(result)
-              return <Alert variant="error" title={friendly.title} message={friendly.message} details={friendly.raw ?? result} />
-            })()
-          )}
-        </div>
-      )}
+      {/* Removed display of last API response per user request */}
     </form>
   )
 }
